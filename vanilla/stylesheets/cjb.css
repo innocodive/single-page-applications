@@ -1,0 +1,66 @@
+#cjb-logo img {
+	margin-top: 10px;
+}
+#cjb-logo p{
+	text-align: left;
+	margin-top: 10px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+	font-style: normal; 
+	font-size: 16px; 
+	line-height: 16px; 
+	color: white;
+}
+
+div.cjb-albums, div.cjb-subalbums { 
+	float: left;
+	padding: 20px 30px 0 30px;
+	margin: 15px;
+	border: 4px solid #333;
+	border-radius: 8px;
+	background-color: #222;
+}
+div.cjb-albums img, div.cjb-subalbums img {
+	width: 140px;
+	height: 140px;
+	border-radius: 3px;
+}
+div.cjb-albums p, div.cjb-subalbums p, #single-image p {
+	text-align: center;
+	margin-top: 10px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+	font-style: normal; 
+	font-size: 14px; 
+	line-height: 15px; 
+	color: white;
+}
+
+#single-image img {
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+p.home-button {
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+	font-style: normal; 
+	font-size: 14px;
+}
+p.home-button a{
+	padding: 5px 15px;
+	border: 1px solid #999;
+	border-radius: 20px;
+	background-color: #eee;
+}
+
+#cjb-footer p{
+	margin-top: 20px;
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+	font-style: normal; 
+	font-size: 12px;
+	color: white;
+}

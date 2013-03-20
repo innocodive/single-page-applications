@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Language" content="en-gb" />
+
+  <title>Colin Joseph Burns - British Painter and Musician</title>
+  
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/cjb.css">
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<!-- ======================= TEMPLATES ===================== -->
+  <script id="albumTmpl" type="text/template">
+    {{#albums}}
+    <div class='cjb-albums'>
+      <a class='album-cover' id='{{pid}}' href='#'><img src='images/albums/{{image}}'></a>
+      <p>{{title}}</p>
+    </div>
+    {{/albums}}
+  </script>
+  <script id="subAlbumTmpl" type="text/template">
+    {{#sub}}
+    <div class='cjb-subalbums'>
+      <a class='subalbum-img' id='{{pid}}' href='#'><img src='images/subalbums/{{image}}'></a>
+      <p>{{title}}</p>
+    </div>
+    {{/sub}}
+  </script>
+  <script id="imgTmpl" type="text/template">
+    <div id='single-image'>
+      <img src='images/subalbums/{{img.image}}' />
+      <p>{{img.title}}</p>
+    </div>
+  </script>
+<!-- end of templates-->
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="twelve columns" id="cjb-logo">
+      <a href="index.html">
+          <img src="images/albums/signature_new.gif" alt="Colin Joseph Burns" />
+      </a>
+      <p>Colin Joseph Burns Paintings</p>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <div id="showAlbums"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns" id="cjb-footer">
+      <p>&copy; Colin Joseph Burns <br />Made by <a href="http://www.innocodive.com" target="_blank" title="Made by Innocodive">innocodive</a></p>
+    </div>
+  </div>
+<!-- included CORE JS files -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="js/mustache.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sitetracker.js"></script>
+
+</body>
+</html>
