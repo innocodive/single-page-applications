@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Language" content="en-gb" />
+
+  <title>Backbone.js - Nested Models/Collections and Views</title>
+  
+  <!-- <link rel="stylesheet" href="stylesheets/foundation.css"> -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/bb-nested.css">
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script id="albumTemplate" type="text/template">
+    <p><%= title %></p>
+  </script>
+  <script id="subalbumTemplate" type="text/template">
+    <p><%= title %></p>
+  </script>
+</head>
+<body>
+
+  <div class="row">
+    <div class="six columns"><h5>Albums</h5></div>
+    <div class="six columns"><h5>Sub-Albums</h5></div>
+  </div>
+  <div class="row" style="color: #333;">
+    <div class="six columns" id="categories"></div>
+    <div class="six columns" id="sub-cat"></div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns" id="bb-nested-footer">
+      <p>&copy; by Max Charyyev ( <a href="http://www.innocodive.com/about.php" target="_blank" title="by Max Charyyev">innocodive </a>)</p>
+    </div>
+  </div>
+<!-- included CORE JS files -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="js/lib/mustache.js"></script>
+  <script src="js/lib/underscore-min.js"></script>
+  <script src="js/lib/backbone-min.js"></script>
+  <script src="javascripts/app.js"></script>
+  
+<!-- main nested-model script -->
+<!--  <script src="js/bb-nested-exp1.js"></script> -->
+  <script src="js/bb-nested.js"></script> 
+
+</body>
+</html>
